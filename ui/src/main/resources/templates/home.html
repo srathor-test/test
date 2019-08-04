@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+
+    <title>Test</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/calculate" object="requestObject" method="POST">
+            Start Date: <input type="date" name="startDate">
+            End Date: <input type="date" name="endDate">
+            <input type="submit" value="Confirm">
+        </form>
+    </div>
+    <script src="../static/js/bootstrap.js" th:href="@{/js/bootstrap.js}"></script>
+</body>
+</html>
